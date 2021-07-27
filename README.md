@@ -3,7 +3,19 @@
 This is a full stack development built for an assignment for my 
 Degree Apprenticeship @ ARU in conjunction with the Sanger Institute.
 
-## Current Command
+## Usage
+
+1 - git clone the repo.
+
+2 - Navigate to the repo and change the directory locations to represent your local system.
+
+3 - `docker-compose up`
+
+4 - If successful then you should be able to navigate to the below full database api address, or to `http://localhost:8000/`.
+
+5 - To spin down the container use the command `docker-compose down -v`
+
+## Useful Commands
 Once running the full data table can be received by entering this into the browser:
 
 """
@@ -12,10 +24,29 @@ http://0.0.0.0:3010/master_table?select=cog_fk(test_id,test_seq_name,test_strain
 
 """
 
+You'll have to remove the line break introduced in the above query. 
+This query returns all information carried in the database
+
+
 ## Task
+
+1 - Design a relational database for Covid-19
+    
+    This includes the assignment of data types, the atomicity, indexing and production of an ERD
+
+2 - Query
+
+    Provide evidence of a query for those infected with the variant LOND-1362B14
+
 
 ## Notes
 Containers are currently personalised for my personal machine,
 please double check file locations in the docker-compose.yaml.
 
 ## Containers
+
+1 - Database
+
+2 - API
+
+3 - Webserver

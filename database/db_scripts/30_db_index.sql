@@ -1,0 +1,16 @@
+CREATE INDEX idx_master on master_table(cog_fk, patient_fk, scientist_fk, pcr_main_fk, pcr_fk, annealing_fk, completion_fk, denature_fk, elongate_fk);
+CREATE INDEX idx_annealing on annealing_table(annealing_pk);
+CREATE INDEX idx_completion on completion_table(completion_pk);
+CREATE INDEX idx_denature on denature_table(denature_pk);
+CREATE INDEX idx_elongate on elongate_table(elongate_pk);
+CREATE INDEX idx_patient on patient_table(patient_id, patient_postcode);
+CREATE INDEX idx_scientist on scientist_table(scientist_id, scientist_centre);
+CREATE INDEX idx_buffer on buffer_table(buffer_id);
+CREATE INDEX idx_enzyme on enzyme_table(enz_id);
+CREATE INDEX idx_manufacture on manufacturer_table(manu_id);
+CREATE INDEX idx_nucleotide on nucleotide_table(nucleo_id);
+CREATE INDEX idx_pcr_main on pcr_main_table(pcr_id);
+CREATE INDEX idx_supplier on supplier_table(supplier_pk);
+CREATE INDEX idx_ref on seq2main_table(ref_id, seq_f_fk, seq_r_fk);
+CREATE INDEX idx_seq on seq_table(seq_id);
+CREATE INDEX idx_cog on cog_table(test_id, test_strain);
