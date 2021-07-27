@@ -1,0 +1,7 @@
+pcr_pk	pcr_kit_name	pcr_order_no	pcr_cost	manu_fk	supplier_fk	buffer_fk	enz_fk	nucleo_fk
+0	Basic PCR Kit 1	1	19.99	0	0	0	0	0
+1	Basic PCR Kit 2	115	29.99	1	1	1	0	0
+2	Basic PCR Kit 1	274	19.99	0	0	0	0	0
+3	Basic PCR Kit 1	235	19.99	0	0	0	0	0
+4	Basic PCR Kit 2	7	29.99	1	1	1	0	0
+5	PCR Visual Dye Kit	29	49.99	2	2	0	1	0

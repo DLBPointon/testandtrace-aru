@@ -1,0 +1,16 @@
+cog_fk	result	date	time	order_no_fk	denature_fk	elongate_fk	annealing_fk	completion_fk	cycle_count	primer_fk	seq_to_amp	test_purpose	primer_conc	primer_supplier	costs	patient_pk	scientist_fk
+1	POSITIVE	2020-03-14 00:00:00	10:05:00	7	0	0	0	0	40	0	nucleocapsid gene 5' end	Diagnostic	20 µM	IDT	120	0	0
+99	NEGATIVE	2020-03-14 00:00:00	12:05:00	274	0	0	1	0	35	3	envelope protein gene	Diagnostic	400 nm	IDT	120	1	1
+99	VOID	2020-03-14 00:00:00	10:05:00	115	0	0	0	0	40	2	nucleocapsid gene 3' end	Diagnostic	20 µM	IDT	120	2	2
+4	POSITIVE	2020-03-14 00:00:00	10:05:00	7	0	0	0	0	40	0	nucleocapsid gene 5' end	Diagnostic	20 µM	IDT	120	3	0
+99	NEGATIVE	2020-03-14 00:00:00	12:05:00	274	0	0	1	0	35	3	envelope protein gene	Diagnostic	400 nm	IDT	120	4	1
+99	NEGATIVE	2020-03-14 00:00:00	10:05:00	235	0	0	0	0	40	2	nucleocapsid gene 3' end	Diagnostic	20 µM	IDT	120	5	2
+99	NEGATIVE	2020-03-14 00:00:00	10:05:00	29	0	0	0	0	40	2	nucleocapsid gene 3' end	Diagnostic	20 µM	IDT	120	6	0
+5	POSITIVE	2020-03-15 00:00:00	11:00:00	1	0	1	2	0	35	1	nucleocapsid gene 3' end	Research	500 nm	Merck	150	7	1
+99	NEGATIVE	2020-03-14 00:00:00	10:05:00	235	0	0	0	0	40	2	nucleocapsid gene 3' end	Diagnostic	20 µM	IDT	120	8	2
+3	POSITIVE	2020-03-14 00:00:00	10:05:00	29	0	0	0	0	40	2	nucleocapsid gene 3' end	Diagnostic	20 µM	IDT	120	9	0
+99	NEGATIVE	2020-03-14 00:00:00	12:05:00	274	0	0	1	0	35	3	envelope protein gene	Diagnostic	400 nm	IDT	120	10	1
+99	NEGATIVE	2020-03-15 00:00:00	10:05:00	235	0	0	0	0	40	2	nucleocapsid gene 3' end	Diagnostic	20 µM	IDT	120	11	2
+6	POSITIVE	2020-03-14 00:00:00	10:05:00	7	0	0	0	0	40	0	nucleocapsid gene 5' end	Diagnostic	20 µM	IDT	120	12	0
+99	NEGATIVE	2020-03-15 00:00:00	11:00:00	274	0	0	1	0	35	3	envelope protein gene	Diagnostic	400 nm	IDT	120	13	1
+0	POSITIVE	2020-03-14 00:00:00	10:05:00	235	0	0	0	0	40	2	nucleocapsid gene 3' end	Diagnostic	20 µM	IDT	120	14	2
