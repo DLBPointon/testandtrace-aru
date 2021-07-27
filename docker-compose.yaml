@@ -24,9 +24,11 @@ services:
       POSTGRES_PASSWORD: password
       PG_DATA: /var/lib/postgresql/data/mydata/
     volumes:
-      - "/home/dlbp/databse_testandtrace/database_ingestion_data/:/var/lib/postgresql/tandtdb/"
-      - "/home/dlbp/databse_testandtrace/database/db_scripts/10_db_init.sql:/docker-entrypoint-initdb.d/10_db_init.sql"
-      - "/home/dlbp/databse_testandtrace/database/db_scripts/20_db_fill.sql:/docker-entrypoint-initdb.d/20_db_fill.sql"
+      - "./database_ingestion_data/:/var/lib/postgresql/tandtdb/"
+      - "./database/db_scripts/10_db_init.sql:/docker-entrypoint-initdb.d/10_db_init.sql"
+      - "./database/db_scripts/20_db_fill.sql:/docker-entrypoint-initdb.d/20_db_fill.sql"
+      - "./database/db_scripts/30_db_index.sql:/docker-entrypoint-initdb.d/30_db_index.sql"
+      - "./database/db_scripts/40_db_view.sql:/docker-entrypoint-initdb.d/40_db_view.sql"
     restart: on-failure
 
   client:
