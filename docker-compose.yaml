@@ -1,5 +1,7 @@
 version: '3'
 services:
+
+# Database - API layer
   server:
     image: postgrest/postgrest:v7.0.1
     ports:
@@ -14,6 +16,7 @@ services:
       - db
     restart: on-failure
 
+# The database
   db:
     image: postgres:13
     ports:
@@ -31,14 +34,16 @@ services:
       - "./database/db_scripts/40_db_view.sql:/docker-entrypoint-initdb.d/40_db_view.sql"
     restart: on-failure
 
+# Webserver
   client:
     image: nginx:1.21.1
     ports:
       - "8000:80"
     volumes:
-      - "/home/dlbp/databse_testandtrace/website:/usr/share/nginx/html:ro"
+      - "./website:/usr/share/nginx/html:ro"
     restart: on-failure
 
+# This container can be commented out, it provides a UI for the API
   swagger:
     image: swaggerapi/swagger-ui
     ports:
@@ -48,6 +53,3 @@ services:
     environment:
       API_URL: http://localhost:3000/
     restart: on-failure
-
-  # The above to commented out as it is non essential to the project,
-  # It does however provide a nice descriptive UI of the API

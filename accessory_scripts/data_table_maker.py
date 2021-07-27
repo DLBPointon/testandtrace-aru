@@ -50,7 +50,6 @@ def sheet1(sheet, kitorder, primer, cog):
 
     test_table = full_table.iloc[0:2]
     info_table = full_table.iloc[3:6]
-
     denature_table = full_table.iloc[6:8]
     annealing_table = full_table.iloc[8:10]
     elongate_table = full_table.iloc[10:12]

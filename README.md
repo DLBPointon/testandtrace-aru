@@ -24,7 +24,7 @@ http://0.0.0.0:3010/master_table?select=cog_fk(test_id,test_seq_name,test_strain
 
 """
 
-You'll have to remove the line break introduced in the above query. 
+You'll have to remove the line break introduced in the above query, this is due to a GitHub line limit.
 This query returns all information carried in the database
 
 
@@ -40,13 +40,23 @@ This query returns all information carried in the database
 
 
 ## Notes
-Containers are currently personalised for my personal machine,
-please double check file locations in the docker-compose.yaml.
+Containers should be generalised for use of other machines,
+if not then the docker-compose.yaml volume arguments will need changing to an absolute path.
+
 
 ## Containers
+<details>
 
 1 - Database
 
+ - Built with PostgreSQL
+
 2 - API
 
+ - Built with PostgREST
+
 3 - Webserver
+
+ - Built with Nginx, Javascript and Tabulator
+
+</details>
